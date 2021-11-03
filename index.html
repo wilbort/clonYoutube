@@ -5,11 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./icons/style.css">
     <title>Clon Youtube | HTML y CSS</title>
 </head>
 <body>
-    <h1>Holis</h1>
-    <h2>hola</h2>
-    <button>hola boton</button>
+    <header class="main-header">
+        <div class="place-center start">
+            <button class="icon-menu action-button"></button>
+            <img class="logo" src="./img/logo-yt.svg" alt="Lgo Youtube">
+        </div>
+        <!-- MIDDLE -->
+        <div class="middle place-center">
+            <form class="form-search place-center" action="#">
+                <input type="search" placeholder="Buscar" class="input">
+                <button data-tooltip="Buscar" class="submit icon-search"></button>
+            </form>
+            <!-- <button data-tooltip="Haz búsquedas por voz" class="icon-microphone action-button"></button> -->
+        </div>
+        <!-- END -->
+        <div class="place-center buttons-container">
+            <button data-tooltip="Crear" class="icon-camera action-button"></button>
+            <button data-tooltip="Aplicaciones de Youtube" class="icon-grid action-button"></button>
+            <button data-tooltip="Notificaciones" class="icon-bell action-button"></button>
+            
+            <div class="user">
+                <div class="user-avatar">
+                    <img src="https://avatars.githubusercontent.com/u/5506070" class="image" alt="Foto del usuario">
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
