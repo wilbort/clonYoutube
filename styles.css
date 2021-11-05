@@ -55,6 +55,9 @@
 body {
     font-family: var(--body-font);
     background-color: var(--bg-color-alt);
+    line-height: 1.15rem;
+    padding-top: var(--header-height);
+    padding-left: var(--sidebar-width);
 }
 
 h1,
@@ -83,6 +86,10 @@ hr {
     padding-top: var(--spacing);
 }
 
+.flex {
+    display: flex;
+}
+
 .place-center {
     display: flex;
     justify-content: center;
@@ -92,10 +99,6 @@ hr {
 .buttons-container {
     display: flex;
     gap: 0.5rem;
-}
-
-body {
-    min-height: 200vh;
 }
 
 /* ----- Scroll ----- */
@@ -249,6 +252,8 @@ body {
     --main-nav-padding: 0.5rem 1.5rem;
     position: fixed;
     top: var(--header-height);
+    left: 0;
+    z-index: 1;
     height: calc(100vh - var(--header-height));
     width: var(--sidebar-width);
     background-color: var(--bg-color);
@@ -264,6 +269,7 @@ body {
     color: var(--text-color);
     font-size: var(--small-font-size);
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .main-nav .link.is-active,
@@ -341,3 +347,75 @@ body {
     color: var(--text-color-alt);
     margin: 0;   
 }
+
+/* ----- Tarjeta de videos ----- */
+.card-video {
+    /* max-width: 300px; */
+}
+
+.card-video a {
+    text-decoration: none;
+    color: inherit
+}
+
+.card-video .cover {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 0.75rem;
+}
+
+.card-video .image {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-video .time {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0 0.25rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--text-color-white);
+    font-size: var(--smaller-font-size);
+    border-radius: var(--border-radius);
+}
+
+.card-video .user-avatar {
+    --size: 36px;
+    margin-right: 0.75rem;
+}
+
+.card-video .content {
+    font-size: var(--small-font-size);
+    color: var(--text-color-alt);
+}
+
+.card-video .title {
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+}
+
+/* ----- Información del video ----- */
+.video-information .views {
+    display: inline-flex;
+}
+
+.video-information .views::after {
+    content: '\e91b';
+    font-family: var(--icon-font);
+    font-size: 0.25rem;
+    padding: 0 0.25rem;
+}
+
+/* ----- Grid de videos ----- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem 1rem;
+    padding: 1rem 2rem;
+    max-width: 1800px;
+    margin-inline: auto;
+}
+
