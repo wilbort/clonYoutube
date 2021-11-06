@@ -8,8 +8,8 @@ export const commentTemplate = (data) => `
   </div>
   <div class="content">
     <header class="header">
-      <a href="#"
-          class="name"><b>Ismael Cruz</b></a>
+      <a href="https://wilbort.pe"
+          class="name"><b>Wilbort Encomenderos</b></a>
       <time class="time">Hace una semana</time>
     </header>
     <p class="text rows-text-4">${data.content}</p>
