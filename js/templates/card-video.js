@@ -1,5 +1,5 @@
 export const cardVideo = (data) => `
-    <a href="/video.html"
+    <a href="./video.html"
     class="cover">
     <img class="image"
       src=${data.cover}>
@@ -11,7 +11,7 @@ export const cardVideo = (data) => `
     </div>
     <div class="content">
       <h3 class="title">
-        <a href="/video.html">¿Qué es el testing de software y cómo hacerlo? 🐞</a>
+        <a href="./video.html">¿Qué es el testing de software y cómo hacerlo? 🐞</a>
       </h3>
       <a href="https://wilbort.pe" target="_blank">WilbortER</a>
       <p class="video-information">

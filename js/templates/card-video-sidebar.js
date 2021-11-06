@@ -1,5 +1,5 @@
 export const cardVideoSidebar = (data) => `
-    <a href="/video.html"
+    <a href="./video.html"
     class="cover">
     <img class="image"
       src=${data.cover}>
@@ -7,7 +7,7 @@ export const cardVideoSidebar = (data) => `
   </a>
   <div class="content">
       <h3 class="title rows-text-2">
-        <a href="/video.html">¿Qué es el testing de software y cómo hacerlo? 🐞</a>
+        <a href="./video.html">¿Qué es el testing de software y cómo hacerlo? 🐞</a>
       </h3>
       <a href="#">WilbortER</a>
       <p class="video-information">

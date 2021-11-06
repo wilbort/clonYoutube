@@ -289,6 +289,23 @@ hr {
     z-index: var(--z-tooltip);
 }
 
+/* ----- Botón básico ----- */
+.button {
+    --button-color: #cc0000;
+    --text-button-color: white;
+    --cursos-button: pointer;
+
+    padding: 0.5rem 1rem;
+    background-color: var(--button-color);
+    color: var(--text-button-color);
+    text-transform: uppercase;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-bold);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: var(--cursos-button);
+}
+
 /* ----- Menu lateral ----- */
 .main-sidebar {
     --main-nav-padding: 0.5rem 1.5rem;
@@ -511,6 +528,46 @@ body.video-page {
 
 .video-player .border {
     padding-top: 0;
+}
+
+/* ----- Estilos para infornación de video ----- */
+.video-player-information {
+    gap: 1rem;
+    color: var(--text-color);
+}
+
+.video-player-information .user-avatar {
+    --size: 3rem;
+}
+
+.video-player-information .content {
+    width: 100%;
+}
+
+.video-player-information .channel-name {
+    color: inherit;
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-bold);
+}
+
+.video-player-information .subs-count {
+    color: var(--text-color-alt);
+    font-size: var(--smaller-font-size);
+}
+
+.video-player-information .header {
+    margin-bottom: 1rem;
+}
+
+.video-player-information .header .button {
+    margin-left: auto;
+}
+
+.video-player-information .caption {
+    max-width: 600px;
+    line-height: 1.25rem;
+    font-size: var(--small-font-size);
 }
 
 .cards-sidebar {
