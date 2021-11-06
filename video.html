@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./icons/style.css">
+    <title>Video | Clon Youtube | HTML y CSS</title>
+</head>
+<body class="video-page scroll">
+    <header class="main-header">
+        <div class="start place-center">
+            <button class="icon-menu action-button"></button>
+            <img class="logo" src="./img/logo-yt.svg" alt="Logo Youtube">
+        </div>
+        <!-- MIDDLE -->
+        <div class="middle place-center">
+            <form class="form-search place-center" action="#">
+                <input type="search" placeholder="Buscar" class="input">
+                <button data-tooltip="Buscar" class="submit icon-search"></button>
+            </form>
+            <button data-tooltip="Haz búsquedas por voz" class="icon-microphone action-button"></button>
+        </div>
+        <!-- END -->
+        <div class="place-center buttons-container">
+            <button data-tooltip="Crear" class="icon-camera action-button"></button>
+            <button data-tooltip="Aplicaciones de Youtube" class="icon-grid action-button"></button>
+            <button data-tooltip="Notificaciones" class="icon-bell action-button"></button>
+            
+            <div class="user">
+                <div class="user-avatar">
+                    <img src="https://avatars.githubusercontent.com/u/5506070" class="image" alt="Foto del usuario">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="video-page-grid">
+        <main class="video-column">
+            <p>Main</p>
+        </main>
+
+        <aside class="cards-sidebar">
+            <p>Aside</p>
+
+        </aside>
+    </div>
+
+</body>
+</html>
