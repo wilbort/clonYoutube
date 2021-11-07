@@ -423,10 +423,6 @@ hr.big {
 }
 
 /* ----- Tarjeta de videos ----- */
-.card-video {
-    /* max-width: 300px; */
-}
-
 .card-video a {
     text-decoration: none;
     color: inherit
@@ -471,6 +467,29 @@ hr.big {
     margin-bottom: 0.25rem;
 }
 
+/* ----- Card video cuando está en el sidebar ----- */
+.cards-sidebar {
+    display: grid;
+    gap: 1rem;
+    grid-column-start: span 4;
+}
+
+.card-video.in-sidebar {
+    /* display: grid; */ display: flex;
+    /* grid-template-columns: repeat(9, 1fr); */ flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.card-video.in-sidebar .cover {
+    margin-bottom: 0;
+    /* grid-column-start: span 5; */ min-width: 200px;
+    max-width: 250px;
+}
+
+.card-video.in-sidebar .content {
+    /* grid-column-start: span 4; */ flex-grow: 1;
+}
+
 /* ----- Información del video ----- */
 .video-information .views {
     display: inline-flex;
@@ -506,7 +525,7 @@ body.video-page {
     max-width: 1600px;
     display: grid;
     gap: var(--gap-page);
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     margin-inline: auto;
     padding-top: var(--gap-page);
 }
@@ -588,6 +607,7 @@ body.video-page {
 /* ----- Sección de comentarios ----- */
 .comments-information {
     align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .comment-form {
@@ -686,13 +706,4 @@ body.video-page {
 
 .comment .action-button .text {
     font-size: var(--smaller-font-size);
-}
-
-.cards-sidebar {
-    background-color: blue;
-    grid-column-start: span 3;
-}
-
-body {
-    min-height: 200vh;
 }

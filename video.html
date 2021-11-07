@@ -12,7 +12,9 @@
     <header class="main-header">
         <div class="start place-center">
             <button class="icon-menu action-button"></button>
-            <img class="logo" src="./img/logo-yt.svg" alt="Logo Youtube">
+            <a href="./index.html">
+                <img class="logo" src="./img/logo-yt.svg" alt="Logo Youtube">
+            </a>
         </div>
         <!-- MIDDLE -->
         <div class="middle place-center">
@@ -138,7 +140,8 @@
                     </div>
                 </div>
                 <div class="comments-grid" id="comments-grid">
-                    <!-- <article class="comment flex">
+                    <!--  AQUI SE REDERIZA LOS COMENTARIOS
+                    <article class="comment flex">
                         <div class="user">
                             <div class="user-avatar">
                                 <img src="https://avatars.githubusercontent.com/u/5506070" class="image" alt="Foto del usuario">
@@ -173,10 +176,29 @@
             </section>
         </main>
 
-        <aside class="cards-sidebar">
-            <p>Aside</p>
+        <aside class="cards-sidebar" id="card-grid">
+            <!--  AQUI SE RENDERIZA LOS VIDEOS EN EL SIDEBAR
+            <article class="card-video in-sidebar">
+                <a href="#" class="cover">
+                    <img class="image"
+                        src="https://picsum.photos/id/33/520/300" 
+                        alt="Poster de video">
+                    <time class="time">5:05</time>
+                </a>
+                <div class="content">
+                    <h3 class="title rows-text-2">
+                        <a href="./video.html">Este es el título del video</a>
+                    </h3>
+                    <a href="https://wilbort.pe" target="_blank">WilbortER</a>
+                    <p class="video-information">
+                        <span class="views">100.520 visualizaciones</span>
+                        <span>Hace 2 semanas</span>
+                    </p>
+                </div>
+            </article> -->
         </aside>
     </div>
     <script src="./js/scripts/comment.js" type="module"></script>
+    <script src="./js/scripts/cards.js" type="module"></script>
 </body>
 </html>

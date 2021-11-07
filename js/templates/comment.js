@@ -8,7 +8,7 @@ export const commentTemplate = (data) => `
   </div>
   <div class="content">
     <header class="header">
-      <a href="https://wilbort.pe"
+      <a href="https://wilbort.pe" target="_blank"
           class="name"><b>Wilbort Encomenderos</b></a>
       <time class="time">Hace una semana</time>
     </header>
